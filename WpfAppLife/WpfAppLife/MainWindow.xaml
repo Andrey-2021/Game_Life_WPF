@@ -1,0 +1,98 @@
+﻿<Window x:Class="WpfAppLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppLife"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="729" Width="1210" MinHeight="720" MinWidth="1170"
+        Background="LightCyan"
+        WindowStartupLocation="CenterScreen"
+        x:Name="gameWindow">
+    <Grid>
+        <DockPanel>
+            <Menu x:Name="myMenu" DockPanel.Dock="Top" Background="Beige" Padding="5">
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Выход" Click="MenuItem_Click_2"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Настройка" Click="MenuItem_Click_3"></MenuItem>
+                <MenuItem Header="О программе" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Помощь" Click="MenuItem_Click_1"></MenuItem>
+                <MenuItem Header="Выход" Click="MenuItem_Click_2"></MenuItem>
+            </Menu>
+
+            
+
+            <StatusBar DockPanel.Dock="Bottom" Background="Azure" Padding="5">
+                <StatusBarItem>
+                    <TextBlock>Размер поля:</TextBlock>
+                </StatusBarItem>
+                <StatusBarItem>
+                    <TextBox Width="100" Text="{Binding GameBordSize, Mode=OneWay}" IsReadOnly="True"
+                             Style="{DynamicResource TextBoxStyle}"></TextBox>
+                </StatusBarItem>
+
+            </StatusBar>
+
+            <StackPanel DockPanel.Dock="Left" Background="Bisque" Width="180">
+                <Button Click="Button_Click_StartGame" Style="{DynamicResource ButtonStyle}">Старт</Button>
+                <Button Click="Button_Click_StopGame" Style="{DynamicResource ButtonStyle}">Стоп</Button>
+            </StackPanel>
+
+            <StackPanel DockPanel.Dock="Right" Background="LightBlue" Width="150">
+                <Label>Время:</Label>
+                <TextBox x:Name="timeFromStartGame" Text="{Binding TimeSinceStartGame}"
+                         Style="{DynamicResource TextBoxStyle}"></TextBox>
+                
+                <Label>Ход:</Label>
+                <TextBox Text="{Binding CurreentGameStep}"
+                         Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                <GroupBox Header="Создаётся" Style="{DynamicResource GroupBoxStyle}">
+                    <StackPanel>
+                        <Label>неживых:</Label>
+                        <TextBox Text="{Binding NumberInanimateObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                        <Label>растений:</Label>
+                        <TextBox Text="{Binding NumberPlantObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                        <Label>травоядных:</Label>
+                        <TextBox Text="{Binding NumberHerbivorousObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                        <Label>хищников:</Label>
+                        <TextBox Text="{Binding NumberPredatorObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+                    </StackPanel>
+                </GroupBox>
+
+
+                <GroupBox Header="Сейчас" Style="{DynamicResource GroupBoxStyle}">
+                    <StackPanel>
+                        <Label>неживых:</Label>
+                        <TextBox Text="{Binding CurrentNumberInanimateObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                        <Label>растений:</Label>
+                        <TextBox Text="{Binding CurrentNumberPlantObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                        <Label>травоядных:</Label>
+                        <TextBox Text="{Binding CurrentNumberHerbivorousObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+
+                        <Label>хищников:</Label>
+                        <TextBox Text="{Binding CurrentNumberPredatorObjects}"
+                                 Style="{DynamicResource TextBoxStyle}"></TextBox>
+                    </StackPanel>
+                </GroupBox>
+
+            </StackPanel>
+
+            <UniformGrid x:Name="UniformGridGameBord" Margin="5" Background="LightSteelBlue" ></UniformGrid>
+        </DockPanel>
+
+    </Grid>
+</Window>

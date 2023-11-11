@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CreatureClassLibrary.Animal" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAAAEgAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatureClassLibrary.Creature" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAAAAAAEAAACQQAIAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Creature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatureClassLibrary.Herbivorous" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAQEIBEAAAAAAABAAACAAAAAAAAgAAAAAAAAQAIAE=</HashCode>
+      <FileName>CreatureClassLibrary\Herbivorous.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatureClassLibrary.Inanimate" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Inanimate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatureClassLibrary.Plant" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAYABAAAAAAAAACAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Plant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreatureClassLibrary.Predator" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAACAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Predator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Hill" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Inanimate\Hill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Lake" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Inanimate\Lake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Tree" Collapsed="true">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Inanimate\Tree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Plants.Banana" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Plants\Banana.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Plants.Carrot" Collapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Plants\Carrot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Herbivorouses.Hare" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAE=</HashCode>
+      <FileName>CreatureClassLibrary\Herbivorouses\Hare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Herbivorouses.Monkey" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAE=</HashCode>
+      <FileName>CreatureClassLibrary\Herbivorouses\Monkey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Predators.Lupus" Collapsed="true">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Predators\Lupus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfAppLife.CreatureClassLibrary.Predators.Jaguar" Collapsed="true">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CreatureClassLibrary\Predators\Jaguar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

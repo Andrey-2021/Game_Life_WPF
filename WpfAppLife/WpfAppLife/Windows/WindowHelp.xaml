@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfAppLife.WindowHelp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppLife"
+        mc:Ignorable="d"
+        Title="Помощь" Height="650" Width="700" MinHeight="600" MinWidth="650"
+        Background="Aqua" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightSkyBlue" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Margin="10" Padding="5" Background="LightCyan" 
+                   TextAlignment="Center" TextWrapping="Wrap">
+                Игра "Жизнь" <LineBreak/> 
+            
+            Игроку предоставляется игровое поле.  Каждый  определенный  период  времени <LineBreak/> 
+(например, ход в 2 секунды) сменяется жизненный цикл (перерисовывается поле). <LineBreak/> 
+На клетках находятся живые организмы, определенных типов: <LineBreak/> <LineBreak/> 
+            Тип Неживые объекты: горы, озера, деревья; не двигаются, находятся в одной клетке на протяжении всей игры.
+            <LineBreak/> <LineBreak/> 
+            Тип Растение: является пищей для травоядного животного; не 
+двигается, появляется в незанятой клетке в случайном порядке раз в 
+несколько жизненных циклов. <LineBreak/> <LineBreak/> 
+            
+            Тип Травоядное животное: поглощает растения и является пищей для 
+хищника; каждое травоядное двигается на случайную клетку 
+поблизости раз в несколько жизненных циклов (период должен 
+выбираться случайным образом), с некоторой вероятностью оставляя 
+после себя травоядное животное. Наступая на клетку с растением 
+поглощает его. <LineBreak/> <LineBreak/> 
+            
+            Тип Хищник: поглощает травоядных, но не взаимодействует с 
+растениями; каждый хищник двигается на случайную клетку 
+поблизости раз в несколько жизненных циклов, поглощая всех 
+травоядных, которых встретит; с растениями не взаимодействует (или 
+взаимодействует, если это прописано в варианте задания, которые 
+указаны ниже). 
+            <LineBreak/>  <LineBreak/> 
+            Травоядные  и  хищники  обладают  системой  голода.  Изначально  у 
+каждого из травоядных и хищников показатель голода равен определенному 
+значению,  указанному  в  вариантах  ниже.  Каждое  перемещение  живого 
+организма  отнимает  0,2  от  показателя  голода.  Рождение  нового  живого 
+организма отнимает 0,4. Поглощение другого вида прибавляет к голоду 0,2. 
+            В  случае,  когда  состояние  голода  станет  равно  нулю  –  живое  существо 
+погибает. 
+            <LineBreak/> 
+Растения живут ограниченное количество циклов, а затем погибают. 
+            
+                <LineBreak/><LineBreak />2022г.
+        </TextBlock>
+        <Button Grid.Row="1" HorizontalAlignment="Center" Margin="10" Padding="5" Click="Button_Click_Exit">Закрыть</Button>
+
+    </Grid>
+</Window>
